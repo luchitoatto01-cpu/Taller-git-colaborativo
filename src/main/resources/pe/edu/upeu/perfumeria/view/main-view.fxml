@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" stylesheets="@style.css"
+            fx:controller="pe.edu.upeu.perfumeria.controller.MainController"
+            prefHeight="700.0" prefWidth="1000.0">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="70.0" styleClass="header">
+            <children>
+                <Label styleClass="header-brand" text="✦ PARFUMS HOUSE">
+                    <HBox.margin><Insets left="22.0"/></HBox.margin>
+                </Label>
+                <Region HBox.hgrow="ALWAYS"/>
+                <VBox alignment="CENTER_RIGHT" spacing="2.0">
+                    <children>
+                        <Label fx:id="lblUsuario" styleClass="header-user" text="Usuario"/>
+                        <Label fx:id="lblRol" styleClass="header-role" text="ROL"/>
+                    </children>
+                </VBox>
+                <Button mnemonicParsing="false" onAction="#handleLogout" styleClass="button-logout" text="Cerrar sesión">
+                    <HBox.margin><Insets left="18.0" right="22.0"/></HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </top>
+
+    <left>
+        <VBox prefWidth="210.0" spacing="2.0" styleClass="sidebar">
+            <children>
+                <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showHome" styleClass="nav-button" text="Inicio"/>
+                <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showVentas" styleClass="nav-button" text="Ventas"/>
+                <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showProductos" styleClass="nav-button" text="Perfumes"/>
+                <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#showClientes" styleClass="nav-button" text="Clientes"/>
+                <Button fx:id="btnUsuarios" maxWidth="Infinity" mnemonicParsing="false" onAction="#showUsuarios" styleClass="nav-button" text="Usuarios"/>
+            </children>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox>
+            <StackPane fx:id="contentArea" styleClass="content-area" VBox.vgrow="ALWAYS"/>
+            <HBox alignment="CENTER" prefHeight="26.0" styleClass="footer">
+                <children>
+                    <Label styleClass="muted" text="© Parfums House - 2026"/>
+                </children>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

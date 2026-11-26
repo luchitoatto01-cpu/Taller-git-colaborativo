@@ -1,0 +1,164 @@
+/* ===== Parfums House – tema perfumería de lujo =====
+   Carbón #16161A · Dorado #C9A24D · Marfil #FAF6EE · Vino #7B2D4A */
+
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    -fx-font-size: 13px;
+    -fx-text-fill: #2B2B30;
+    -fx-accent: #C9A24D;
+    -fx-focus-color: #C9A24D;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ---------- Login ---------- */
+.left-pane {
+    -fx-background-color: linear-gradient(to bottom right, #16161A, #2A2024 60%, #3A1F2C);
+}
+.right-pane { -fx-background-color: #FAF6EE; }
+.brand-mark  { -fx-text-fill: #C9A24D; -fx-font-size: 54px; }
+.brand-title { -fx-text-fill: #C9A24D; -fx-font-family: Georgia, "Times New Roman", serif;
+               -fx-font-size: 30px; -fx-font-weight: bold; }
+.brand-sub   { -fx-text-fill: #CFC6B2; -fx-font-family: Georgia, serif; -fx-font-style: italic; -fx-font-size: 14px; }
+.login-title { -fx-text-fill: #16161A; -fx-font-family: Georgia, serif; -fx-font-size: 30px; -fx-font-weight: bold; }
+.muted       { -fx-text-fill: #8A8478; }
+.field-label { -fx-text-fill: #5E5A50; -fx-font-size: 12px; -fx-font-weight: bold; }
+.error-label { -fx-text-fill: #B3261E; -fx-font-weight: bold; -fx-min-height: 18px; }
+
+/* ---------- Campos ---------- */
+.text-field, .password-field, .text-area {
+    -fx-background-color: white;
+    -fx-border-color: #E6DCC8;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 9 10 9 10;
+}
+.text-field:focused, .password-field:focused, .text-area:focused {
+    -fx-border-color: #C9A24D;
+    -fx-border-width: 1.5;
+}
+.combo-box, .date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #E6DCC8;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+.combo-box:focused, .date-picker:focused { -fx-border-color: #C9A24D; }
+
+/* ---------- Botones ---------- */
+.button-login {
+    -fx-background-color: linear-gradient(to bottom, #DDBB6A, #B58F36);
+    -fx-text-fill: #16161A;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-background-radius: 6;
+    -fx-padding: 9 22 9 22;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(168,132,47,0.35), 8, 0.1, 0, 2);
+}
+.button-login:hover { -fx-background-color: linear-gradient(to bottom, #E8C97A, #C9A24D); }
+.button-secondary {
+    -fx-background-color: transparent;
+    -fx-border-color: #C9A24D;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: #8A6A1F;
+    -fx-font-weight: bold;
+    -fx-padding: 8 18 8 18;
+    -fx-cursor: hand;
+}
+.button-secondary:hover { -fx-background-color: #F6EBCB; }
+.button-action-edit {
+    -fx-background-color: #16161A;
+    -fx-text-fill: #C9A24D;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 18 8 18;
+    -fx-cursor: hand;
+}
+.button-action-edit:hover { -fx-background-color: #2E2E36; }
+.button-action-delete {
+    -fx-background-color: #7B2D4A;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+    -fx-padding: 8 18 8 18;
+    -fx-cursor: hand;
+}
+.button-action-delete:hover { -fx-background-color: #96385B; }
+.button-logout {
+    -fx-background-color: transparent;
+    -fx-border-color: #C9A24D;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-text-fill: #C9A24D;
+    -fx-cursor: hand;
+}
+.button-logout:hover { -fx-background-color: #C9A24D; -fx-text-fill: #16161A; }
+
+/* ---------- Estructura ---------- */
+.header {
+    -fx-background-color: #16161A;
+    -fx-border-color: #C9A24D;
+    -fx-border-width: 0 0 2 0;
+}
+.header-brand { -fx-text-fill: #C9A24D; -fx-font-family: Georgia, serif; -fx-font-size: 22px; -fx-font-weight: bold; }
+.header-user  { -fx-text-fill: #F4EDDD; -fx-font-size: 14px; -fx-font-weight: bold; }
+.header-role  { -fx-text-fill: #C9A24D; -fx-font-size: 10px; -fx-font-weight: bold; }
+
+.sidebar { -fx-background-color: #1E1E23; -fx-padding: 18 10 10 10; }
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #D9D1BF;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12 16 12 16;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+}
+.nav-button:hover   { -fx-background-color: #2C2C33; -fx-text-fill: #C9A24D; }
+.nav-button:focused { -fx-background-color: #2C2C33; -fx-text-fill: #C9A24D; }
+
+.content-area { -fx-background-color: #FAF6EE; }
+.footer { -fx-background-color: #FAF6EE; }
+
+/* ---------- Tablas ---------- */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #E6DCC8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+.table-view .column-header-background { -fx-background-color: #16161A; -fx-background-radius: 8 8 0 0; }
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: #16161A;
+    -fx-border-color: transparent;
+}
+.table-view .column-header .label { -fx-text-fill: #C9A24D; -fx-font-weight: bold; }
+.table-row-cell { -fx-background-color: white; -fx-border-color: transparent transparent #F0E9D8 transparent; }
+.table-row-cell:odd { -fx-background-color: #FCFAF4; }
+.table-row-cell:filled:hover { -fx-background-color: #F8EFD7; }
+.table-row-cell:filled:selected { -fx-background-color: #EBD9A6; }
+.table-row-cell:filled:selected .table-cell { -fx-text-fill: #16161A; }
+.table-cell { -fx-text-fill: #2B2B30; -fx-padding: 6 8 6 8; }
+
+/* ---------- Tarjetas y paneles ---------- */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #E6DCC8;
+    -fx-border-radius: 10;
+    -fx-border-width: 0 0 3 0;
+    -fx-border-color: #E6DCC8 #E6DCC8 #C9A24D #E6DCC8;
+    -fx-padding: 22;
+    -fx-effect: dropshadow(gaussian, rgba(22,22,26,0.10), 14, 0.1, 0, 4);
+}
+.card-number { -fx-text-fill: #16161A; -fx-font-family: Georgia, serif; -fx-font-size: 40px; -fx-font-weight: bold; }
+.card-title  { -fx-text-fill: #8A6A1F; -fx-font-size: 13px; -fx-font-weight: bold; }
+.panel {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-border-color: #E6DCC8;
+    -fx-border-radius: 10;
+    -fx-padding: 14;
+    -fx-effect: dropshadow(gaussian, rgba(22,22,26,0.06), 10, 0.1, 0, 2);
+}
